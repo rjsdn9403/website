@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}">
+
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  img{
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<body>
+    
+    {% include 'blog/navbar.html' %}
+
+    <div class='container'>
+      <div class="row my-3">
+        <!-- mt(위에 마진) mb(아래에 마진) my(위아래 마진) -->
+        <div class="col-7">
+        <h1>About</h1>
+        <h2>박건우입니다.</h2>
+        <p>음악과 영화를 좋아합니다.</p>
+        <p>친하게 지내요!!</p>
+        </div>
+        <div class="col-5">
+        <img src="{% static 'single_pages/images/me.jpg' %}" style="width: 500px; height: 250px">
+        </div>
+      <div>
+        <h2>프로필</h2>
+        <h2>PROFILE</h2>
+        <div class="d-flex flex-column bd-highlight mb-3"> 
+          <h5><img src="{% static 'single_pages/images/com.jpg' %}">
+            이름: 박건우 <br>
+            나이: 20 <br>
+            이메일: hyk95070@naver.com</h5>
+
+          <h2>성장과정</h2>
+          <h2>PROCESS</h2>
+          <h5><img src="{% static 'single_pages/images/hero.jpg' %}">
+            저는 고등학교 3학년 때 부모님의 추천으로 프로그래밍이라는 것을 접했습니다.<br>
+            처음에는 단순 호기심으로 한번 해볼까? 이런 생각을 가지고 있었지만,<br>
+            점점 하다보니 코딩에 오류가 없이 잘 성공하는 것을 볼때마다 성취감을 느꼈습니다. <br>
+            그 이후로 학교 동아리를 프로그래밍 동아리에 가입하였고, <br>1년간 프로그래밍 학원을
+            다니면서 기초지식을 배웠습니다. <br>
+            현재는 그린컴퓨터아카데미에서 웹개발자 수업을 수료중입니다.</h5>
+
+          <h2>언어</h2>
+          <h2>SPEC</h2>
+          <h5><img src="{% static 'single_pages/images/pro.jpg' %}">
+            front-end: HTML, CSS, JavaScript <br>
+            back-end: Python(Django), JAVA(JSP), C언어
+          </h5>
+      </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+    </div>
+</body>
+</html>
